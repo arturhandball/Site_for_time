@@ -1,0 +1,31 @@
+.military {
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 75px;
+}
+
+.military  .panel:nth-of-type(1) {
+    background-image: url(/public/images/attackTitan.jpg);
+}
+.military  .panel:nth-of-type(2) {
+    background-image: url(/public/images/alchemist.png);
+}
+.military  .panel:nth-of-type(3) {
+    background-image: url(/public/images/lelush.jpg);
+}
+.military  .panel:nth-of-type(4) {
+    background-image: url(/public/images/legend.jpg);
+}
+.military  .panel:nth-of-type(5) {
+    background-image: url(/public/images/berserk.jpg);
+}
+
+@media (max-width: 1024px) {
+    .military {
+        flex-direction: column;
+        height: 140vh;
+    }
+}

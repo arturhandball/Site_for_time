@@ -1,0 +1,31 @@
+.drama {
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 75px;
+}
+
+.drama .panel:nth-of-type(1) {
+    background-image: url(/public/images/violet.jpg);
+}
+.drama .panel:nth-of-type(2) {
+    background-image: url(/public/images/yourname.jpg);
+}
+.drama .panel:nth-of-type(3) {
+    background-image: url(/public/images/flowerblooms.jpg);
+}
+.drama .panel:nth-of-type(4) {
+    background-image: url(/public/images/lieapril.jpg);
+}
+.drama .panel:nth-of-type(5) {
+    background-image: url(/public/images/natsumi.jpg);
+}
+
+@media (max-width: 1024px) {
+    .drama {
+        flex-direction: column;
+        height: 140vh;
+    }
+}

@@ -1,0 +1,111 @@
+.footer {
+    background: linear-gradient(95.32deg, #313131 0%, #000000 101.64%);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 75px;
+}
+
+.footer__about {
+    width: 450px;
+}
+
+.footer__about p {
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 38px;
+    letter-spacing: 0.677419px;
+    color: #FFFFFF;
+}
+
+.footer__subscribe {
+    background-color: #FAFAFA;
+    padding: 10px;
+    width: 400px;
+    opacity: 0.8;
+    height: max-content;
+}
+
+.footer__subscribe button {
+    background: linear-gradient(95.32deg, #313131 0%, #000000 101.64%);
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.footer__subscribe input {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: #313131;
+    opacity: 0.7;
+    border: none;
+    margin-left: 25px;
+    outline: none;
+}
+
+.footer__copy {
+    padding: 40px 75px;
+    font-size: 16px;
+    line-height: 38px;
+    letter-spacing: 0.677419px;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+}
+
+@media (max-width: 800px) {
+    .footer__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__subscribe {
+        width: 70%;
+        margin-top: 25px;
+    }
+
+    .footer__copy {
+        text-align: center;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .footer__about {
+        width: 90%;
+    }
+
+    .footer__subscribe {
+        width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__subscribe {
+        width: 280px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90px;
+    }
+
+    .footer__subscribe input {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer__subscribe input::placeholder {
+        text-align: center;
+    }
+}

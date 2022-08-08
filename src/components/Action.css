@@ -1,0 +1,109 @@
+.genre__choose {
+    color: #313131;
+    margin: 20px 75px;
+    border-bottom: 2px solid #313131;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.wrapper {
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 75px;
+}
+
+.panel:nth-of-type(1) {
+    background-image: url(/public/images/sao.webp);
+}
+.panel:nth-of-type(2) {
+    background-image: url(/public/images/naruto.jpg);
+}
+.panel:nth-of-type(3) {
+    background-image: url(/public/images/bleach.jpg);
+}
+.panel:nth-of-type(4) {
+    background-image: url(/public/images/demon.png);
+}
+.panel:nth-of-type(5) {
+    background-image: url(/public/images/shield.png);
+}
+
+.panel {
+    background-size: auto 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 28px;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.4s ease-in 0.5s;
+}
+
+.description {
+    padding: 20px 75px;
+    margin: 20px;
+}
+
+.description p {
+    color: #313131;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    text-align: justify;
+    transition: opacity 0.4s ease-in 0.5s;
+}
+
+.description__link {
+    text-decoration: none;
+    color: #561cf5;
+    opacity: 0.8;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.description__link:hover {
+    color: #1a035b;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+        height: 140vh;
+    }
+
+    .panel {
+        width: 100%;
+        background-size: cover;
+        flex: 1.5;
+    }
+
+    .panel.active {
+        flex: 10;
+    }
+}
+
