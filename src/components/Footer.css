@@ -90,6 +90,10 @@
     .footer__subscribe {
         width: 320px;
     }
+
+    .footer__container {
+        padding: 20px 0;
+    }
 }
 
 @media (max-width: 320px) {

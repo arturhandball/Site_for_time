@@ -10,6 +10,7 @@ import Drama from './components/Drama';
 import Military from './components/Military';
 import Fantasy from './components/Fantasy';
 import News from './components/News';
+import Music from './components/Music';
 
 
 
@@ -30,8 +31,8 @@ function App() {
                       <Route path="fantasy" element={<Fantasy />} />
                   </Route>
           
-              {/* <Route path='/music' element={<Music/>} />
-              <Route path='/games' element={<Games/>} />
+              <Route path='/music' element={<Music/>} />
+              {/* <Route path='/games' element={<Games/>} />
               <Route path='/sign-up' element={<SignUp/>} />
               <Route path='/login' element={<Login/>} /> */}
 
