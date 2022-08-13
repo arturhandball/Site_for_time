@@ -11,6 +11,9 @@ import Military from './components/Military';
 import Fantasy from './components/Fantasy';
 import News from './components/News';
 import Music from './components/Music';
+import Games from './components/Games';
+import Hangman from './components/games/Hangman';
+import XO from './components/games/XO';
 
 
 
@@ -31,9 +34,12 @@ function App() {
                       <Route path="fantasy" element={<Fantasy />} />
                   </Route>
           
+              <Route path='/games/xo' element={<XO/>} />
+              <Route path='/games/hangman' element={<Hangman/>} />
               <Route path='/music' element={<Music/>} />
-              {/* <Route path='/games' element={<Games/>} />
-              <Route path='/sign-up' element={<SignUp/>} />
+              <Route path='/games' element={<Games/>} />
+
+              {/* <Route path='/sign-up' element={<SignUp/>} />
               <Route path='/login' element={<Login/>} /> */}
 
         

@@ -19,7 +19,7 @@ function Music() {
         const audio = document.querySelectorAll('audio')
         audio.forEach(item => {
             
-            if (item.src != e.target.src) item.pause()
+            if (item.src !== e.target.src) item.pause()
         })
 
     }

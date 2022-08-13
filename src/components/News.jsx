@@ -12,10 +12,9 @@ function News() {
     function getAPI() {
        
         
-        fetch('https://newsapi.org/v2/everything?q=movies&from=2022-08-08&sortBy=publishedAt&apiKey=e82c2c1eac7546388b50b3be09fb488f')
+        fetch('https://newsapi.org/v2/everything?q=movies&from=2022-08-13&sortBy=publishedAt&apiKey=e82c2c1eac7546388b50b3be09fb488f')
             .then(response => response.json())
             .then(response => {
-                console.log (response.articles)
                 let data = []
                 
                 response.articles.forEach(elem => {
@@ -27,7 +26,7 @@ function News() {
                         img: elem.urlToImage,
                     }
                     if (data.length <= 25) data.push(prod)
-                    console.log(data)
+                    
                     
                     if (data.length === 25) setNewsApi(data)
                     
