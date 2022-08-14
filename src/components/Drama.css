@@ -29,3 +29,26 @@
         height: 140vh;
     }
 }
+
+@media (max-width: 426px) {
+    .drama {
+        height: 100%;
+        padding: 20px 5px;
+    }
+
+    .drama .panel:nth-of-type(1) {
+        background-image: url(/public/images/violet.jpg);
+    }
+    .drama .panel:nth-of-type(3) {
+        background-image: url(/public/images/yourname.jpg);
+    }
+    .drama .panel:nth-of-type(5) {
+        background-image: url(/public/images/flowerblooms.jpg);
+    }
+    .drama .panel:nth-of-type(7) {
+        background-image: url(/public/images/lieapril.jpg);
+    }
+    .drama .panel:nth-of-type(9) {
+        background-image: url(/public/images/natsumi.jpg);
+    }
+}

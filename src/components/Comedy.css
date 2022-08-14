@@ -29,3 +29,26 @@
         height: 140vh;
     }
 }
+
+@media (max-width: 426px) {
+    .comedy {
+        height: 100%;
+        padding: 20px 5px;
+    }
+
+    .comedy .panel:nth-of-type(1) {
+        background-image: url(/public/images/onizuka.jpg);
+    }
+    .comedy .panel:nth-of-type(3) {
+        background-image: url(/public/images/spy.webp);
+    }
+    .comedy .panel:nth-of-type(5) {
+        background-image: url(/public/images/grand.jpg);
+    }
+    .comedy .panel:nth-of-type(7) {
+        background-image: url(/public/images/kaguya.jpg);
+    }
+    .comedy .panel:nth-of-type(9) {
+        background-image: url(/public/images/fruit.jpg);
+    }
+}

@@ -14,6 +14,7 @@ import Music from './components/Music';
 import Games from './components/Games';
 import Hangman from './components/games/Hangman';
 import XO from './components/games/XO';
+import RSP from './components/games/RSP';
 
 
 
@@ -36,6 +37,7 @@ function App() {
           
               <Route path='/games/xo' element={<XO/>} />
               <Route path='/games/hangman' element={<Hangman/>} />
+              <Route path='/games/rsp' element={<RSP/>} />
               <Route path='/music' element={<Music/>} />
               <Route path='/games' element={<Games/>} />
 
