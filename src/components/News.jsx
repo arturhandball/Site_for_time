@@ -12,7 +12,7 @@ function News() {
     function getAPI() {
        
         
-        fetch('https://newsapi.org/v2/everything?q=movies&from=2022-08-14&sortBy=publishedAt&apiKey=e82c2c1eac7546388b50b3be09fb488f')
+        fetch('https://newsapi.org/v2/everything?q=movies&from=2022-08-15&sortBy=publishedAt&apiKey=e82c2c1eac7546388b50b3be09fb488f')
             .then(response => response.json())
             .then(response => {
                 let data = []

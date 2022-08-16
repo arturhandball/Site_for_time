@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link , Outlet } from 'react-router-dom';
 import './Home.css';
+import News from './News';
 
 function Home() {
 
@@ -23,7 +24,7 @@ function Home() {
                 <p>Get the latest news on your favourite mangas, anime and manhwa around the world!</p>
                 <div className="promo__subscribe">
                     <button>Subscribe</button>
-                    <input type="text" placeholder='Enter your Email' />
+                    <input type="text" placeholder='Enter your Email' name='email_subscribe'/>
                 </div>
             </div>
             <div className="promo__img"></div>
@@ -36,6 +37,7 @@ function Home() {
             </ul>
         </div>
         <Outlet />
+        <News />
     </>
   );
 }

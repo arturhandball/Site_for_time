@@ -9,12 +9,13 @@ import Comedy from './components/Comedy';
 import Drama from './components/Drama';
 import Military from './components/Military';
 import Fantasy from './components/Fantasy';
-import News from './components/News';
 import Music from './components/Music';
 import Games from './components/Games';
 import Hangman from './components/games/Hangman';
 import XO from './components/games/XO';
 import RSP from './components/games/RSP';
+import SignUp from './components/SignUp';
+import Login from './components/Login';
 
 
 
@@ -41,13 +42,13 @@ function App() {
               <Route path='/music' element={<Music/>} />
               <Route path='/games' element={<Games/>} />
 
-              {/* <Route path='/sign-up' element={<SignUp/>} />
-              <Route path='/login' element={<Login/>} /> */}
+              <Route path='/sign-up' element={<SignUp/>} />
+              <Route path='/login' element={<Login/>} />
 
         
           </Routes>
 
-          <News />
+
 
           <Footer />
 
