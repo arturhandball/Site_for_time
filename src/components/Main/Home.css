@@ -60,6 +60,12 @@
     outline: none;
 }
 
+.promo__subscribe.error input::placeholder {
+    color: #f44a4a;
+    font-weight: bold;
+    opacity: 1;
+}
+
 .promo__img {
     width: 735px;
     height: 650px;

@@ -32,22 +32,21 @@ export default function Hangman() {
         setQuestion(ask)
         setAnswer(answ)
 
+        split(answ)
+
     }
 
-    function split() {
+    function split(answer) {
         let word = answer
-        console.log(word)
         let dash = word.split('').map(item => {
             if (item === ' ') return item = ' '
             else return item = ' _ '
         })
-        console.log(dash)
         setDashed(dash)
     }
 
     function click(e){
         let word = answer.toLowerCase()
-        console.log(e.target.value)
         let dash = dashed
         let mistake = count
         e.target.disabled = true
@@ -114,11 +113,6 @@ export default function Hangman() {
     useEffect(()=>{
         picture()
     },[count])
-
-    useEffect(() => {
-        if (!answer) return
-        split()
-    }, [answer])
 
 
   return (

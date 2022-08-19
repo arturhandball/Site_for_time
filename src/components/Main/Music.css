@@ -6,6 +6,8 @@
     justify-content: center;
     background-image: url(/public/images/background.png);
     background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .music__card {
@@ -19,39 +21,39 @@
 }
 
 .music__card:nth-of-type(1) {
-    background-image: url(./audio/nirvana.jpg);
+    background-image: url(../audio/nirvana.jpg);
 }
 
 .music__card:nth-of-type(2) {
-    background-image: url(./audio/eva.jpg);
+    background-image: url(../audio/eva.jpg);
 }
 
 .music__card:nth-of-type(3) {
-    background-image: url(./audio/imagine.jpg);
+    background-image: url(../audio/imagine.jpg);
 }
 
 .music__card:nth-of-type(4) {
-    background-image: url(./audio/lb.jpg);
+    background-image: url(../audio/lb.jpg);
 }
 
 .music__card:nth-of-type(5) {
-    background-image: url(./audio/Linkin-Park.jpg);
+    background-image: url(../audio/Linkin-Park.jpg);
 }
 
 .music__card:nth-of-type(6) {
-    background-image: url(./audio/Linkin-Park.jpg);
+    background-image: url(../audio/Linkin-Park.jpg);
 }
 
 .music__card:nth-of-type(7) {
-    background-image: url(./audio/nickelback.jpg);
+    background-image: url(../audio/nickelback.jpg);
 }
 
 .music__card:nth-of-type(8) {
-    background-image: url(./audio/skil.png);
+    background-image: url(../audio/skil.png);
 }
 
 .music__card:nth-of-type(9) {
-    background-image: url(./audio/skil.png);
+    background-image: url(../audio/skil.png);
 }
 
 .rhap_container {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import hangman from './games/imagelink/hangman.jpg'
-import xo from './games/imagelink/xo.jpg'
-import rsp from './games/imagelink/rsp.jpg'
+import hangman from '../games/imagelink/hangman.jpg'
+import xo from '../games/imagelink/xo.jpg'
+import rsp from '../games/imagelink/rsp.jpg'
 
 import './Games.css'
 

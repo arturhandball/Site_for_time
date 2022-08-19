@@ -5,6 +5,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+const date = new Date()
+const year = date.getFullYear()
+const month = +date.getMonth() + 1
+const day = date.getDate()
+
 function News() {
 
     const [newsApi, setNewsApi] = useState([])
@@ -12,7 +17,7 @@ function News() {
     function getAPI() {
        
         
-        fetch('https://newsapi.org/v2/everything?q=movies&from=2022-08-15&sortBy=publishedAt&apiKey=e82c2c1eac7546388b50b3be09fb488f')
+        fetch(`https://newsapi.org/v2/everything?q=movies&from=${year}-${month < 10 ? '0' + month : month}-${day}&sortBy=publishedAt&apiKey=e82c2c1eac7546388b50b3be09fb488f`)
             .then(response => response.json())
             .then(response => {
                 let data = []

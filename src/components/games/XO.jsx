@@ -13,6 +13,7 @@ function XO() {
     const winner = Winner(board)
 
     function handleClick(e) {
+        if (!xNext) return
         let a = +(e.target.value)
         let newInd = allIndex
         newInd.push(a)
@@ -78,13 +79,13 @@ function XO() {
         if (winner === null && count===9) {
             return <span>Ничья</span>
         } else {
-            return <span>{winner ? 'Победитель ' + winner : 'Сейчас ходит: ' + (xNext ? 'Player' : 'Bot')}</span>
+            return <span>{winner ? 'The winner ' + ((winner === 'X') ? 'Player' : 'Bot') : 'Now walking: ' + (xNext ? 'Player' : 'Bot')}</span>
         }
     }
   
     return (
       <div className='game__wrapper'>
-        <button className='restart' onClick={newGame}>Очистить поле</button>
+        <button className='restart' onClick={newGame}>Clear field</button>
         <div className='game__board'>
             {board.map((item, ind) => {
                 return (

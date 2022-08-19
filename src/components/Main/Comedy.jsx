@@ -41,7 +41,6 @@ function Comedy() {
       setSize(false)
       let panels = document.querySelectorAll('.panels')
       panels.forEach(item => item.classList.remove('active'))
-      console.log(panels)
     }
     else {
       setSize(true)

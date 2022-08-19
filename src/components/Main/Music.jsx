@@ -3,15 +3,15 @@ import './Music.css';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
-import first from './audio/1.mp3'
-import second from './audio/2.mp3'
-import third from './audio/3.mp3'
-import four from './audio/4.mp3'
-import five from './audio/5.mp3'
-import six from './audio/6.mp3'
-import seven from './audio/7.mp3'
-import eight from './audio/8.mp3'
-import nine from './audio/9.mp3'
+import first from '../audio/1.mp3'
+import second from '../audio/2.mp3'
+import third from '../audio/3.mp3'
+import four from '../audio/4.mp3'
+import five from '../audio/5.mp3'
+import six from '../audio/6.mp3'
+import seven from '../audio/7.mp3'
+import eight from '../audio/8.mp3'
+import nine from '../audio/9.mp3'
 
 function Music() {
 
