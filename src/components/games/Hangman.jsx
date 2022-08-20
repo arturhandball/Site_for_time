@@ -22,17 +22,25 @@ export default function Hangman() {
     const [count, setCount] = useState(0)
     const [dashed, setDashed] = useState([])
     const [game, setGame] = useState(true)
+    const [allIndex, setAllIndex] = useState([])
 
     function random(){
+        let indexArray = allIndex
+        if (indexArray.length === words.length) indexArray = []
         let index = Math.floor(Math.random() * words.length)
-        let ask = question
-        let answ = answer
-        ask = words[index].ask
-        answ = words[index].answer
-        setQuestion(ask)
-        setAnswer(answ)
-
-        split(answ)
+        if (indexArray.includes(index)) {return random()
+        } else {
+            let ask = question
+            let answ = answer
+            ask = words[index].ask
+            answ = words[index].answer
+            indexArray.push(index)
+            setQuestion(ask)
+            setAnswer(answ)
+            setAllIndex(indexArray)
+            split(answ)
+            }
+        
 
     }
 
