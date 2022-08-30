@@ -51,7 +51,7 @@ function Home() {
                 <p>Get the latest news on your favourite mangas, anime and manhwa around the world!</p>
                 <div className="promo__subscribe">
                     <button  onClick={subscribe}>Subscribe</button>
-                    <input ref={subBtn} type="text" placeholder= {!emailEr ? 'Enter your Email' : 'Please, check your Email'} name='email_subscribe'/>
+                    <input ref={subBtn} autocomplete="off" type="text" placeholder= {!emailEr ? 'Enter your Email' : 'Please, check your Email'} name='email_subscribe'/>
                 </div>
             </div>
             <div className="promo__img"></div>

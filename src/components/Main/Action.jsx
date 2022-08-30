@@ -35,6 +35,16 @@ function Action() {
     setText(textId)
   },[])
 
+  useEffect(() => {
+    if (window.innerWidth < 427) {
+      setSize(false)
+            let panels = document.querySelectorAll('.panels')
+            panels.forEach(item => item.classList.remove('active'))
+    }else {
+            setSize(true)
+          }
+  })
+
   window.addEventListener("resize", function(){
     if (document.documentElement.clientWidth < 427) {
       setSize(false)

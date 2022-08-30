@@ -85,7 +85,7 @@ function XO() {
   
     return (
       <div className='game__wrapper'>
-        <button className='restart' onClick={newGame}>Clear field</button>
+        <button className='restart' onClick={newGame}>New Game</button>
         <div className='game__board'>
             {board.map((item, ind) => {
                 return (
